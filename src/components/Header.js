@@ -1,10 +1,18 @@
-import React from 'react'
+import React from 'react';
+import './Header.css';
 
 function Header() {
     return (
-        <div>
+        <div className="header__nav">
            <div className="header__brandname">
-               header
+               Vishal Prakash
+           </div>
+           <div className="header__sidemenu">
+               <button>Home</button>
+               <button>About</button>
+               <button>Service</button>
+               <button>Works</button>
+               <button>Contact</button>
            </div>
         </div>
     )
