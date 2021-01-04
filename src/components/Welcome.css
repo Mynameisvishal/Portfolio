@@ -2,6 +2,7 @@
     margin-top: 60px;
     display: flex;
     justify-content: space-around;
+    background: rgba(214, 210, 210, 0.986);
 }
 
 .welcome__page .welcome__info{
@@ -24,11 +25,111 @@
 }
 
 .welcome__page .welcome__avatar{
-    width: 600px;
-    height: 600px;
+    width: 550px;
+    height: 550px;
 }
 
 .welcome__page .welcome__avatar img{
     width: 100%;
     height: 100%;
+}
+
+/* @media (max-width: 1379px) {
+    .welcome__page .welcome__avatar{
+        width: 700px;
+        height: 700px;
+    }
+    
+} */
+@media (max-width: 1279px) {
+    .welcome__page .welcome__avatar{
+        width: 500px;
+        height: 500px;
+    }
+    
+}
+@media (max-width: 1179px) {
+    .welcome__page .welcome__avatar{
+        width: 400px;
+        height: 400px;
+    }
+    
+}
+@media (max-width: 1079px) {
+    .welcome__page .welcome__avatar{
+        display: none;
+    }
+    .welcome__page .welcome__info{
+        align-items: center;
+        margin: 50px auto;
+    }
+    
+}
+@media (max-width: 679px) {
+
+    .welcome__page .welcome__info h2{
+        font-size: 26px;
+    }
+    
+    .welcome__page .welcome__info h1{
+        font-size: 36px;
+        font-family: 'Shojumaru',sans-serif;
+    }
+    
+    .welcome__page .welcome__info p{
+        font-size: 20px;
+        width: 450px;
+    }
+    
+}
+@media (max-width: 579px) {
+
+    .welcome__page .welcome__info h2{
+        font-size: 22px;
+    }
+    
+    .welcome__page .welcome__info h1{
+        font-size: 30px;
+        font-family: 'Shojumaru',sans-serif;
+    }
+    
+    .welcome__page .welcome__info p{
+        font-size: 16px;
+        width: 450px;
+    }
+    
+}
+@media (max-width: 479px) {
+
+    .welcome__page .welcome__info h2{
+        font-size: 20px;
+    }
+    
+    .welcome__page .welcome__info h1{
+        font-size: 28px;
+        font-family: 'Shojumaru',sans-serif;
+    }
+    
+    .welcome__page .welcome__info p{
+        font-size: 14px;
+        width: 350px;
+    }
+    
+}
+@media (max-width: 379px) {
+
+    .welcome__page .welcome__info h2{
+        font-size: 20px;
+    }
+    
+    .welcome__page .welcome__info h1{
+        font-size: 28px;
+        font-family: 'Shojumaru',sans-serif;
+    }
+    
+    .welcome__page .welcome__info p{
+        font-size: 14px;
+        width: 250px;
+    }
+    
 }
