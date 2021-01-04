@@ -1,0 +1,34 @@
+.welcome__page{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.welcome__page .welcome__info{
+    align-items: center;
+    margin: auto auto;
+}
+
+.welcome__page .welcome__info h2{
+    font-size: 30px;
+}
+
+.welcome__page .welcome__info h1{
+    font-size: 46px;
+    font-family: 'Shojumaru',sans-serif;
+}
+
+.welcome__page .welcome__info p{
+    font-size: 24px;
+    width: 600px;
+}
+
+.welcome__page .welcome__avatar{
+    width: 600px;
+    height: 600px;
+}
+
+.welcome__page .welcome__avatar img{
+    width: 100%;
+    height: 100%;
+}

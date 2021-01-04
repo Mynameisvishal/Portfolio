@@ -8,7 +8,7 @@ function Header() {
     return (
         <div className="header__nav">
            <div className="header__brandname">
-               Vishal Prakash
+               Vishal P
            </div>
            <div className="header__menu">
                <button>Home</button>
