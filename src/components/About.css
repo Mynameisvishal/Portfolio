@@ -1,0 +1,23 @@
+.about__page{
+    display: flex;
+}
+
+.about__page .about__pic img{
+    width: 348px;
+    height: 518px;
+}
+
+.about__page .about__me{
+    margin: auto auto;
+}
+
+.about__page .about__me h1{
+    font-size: 30px;
+    font-family: 'Skranji',sans-serif;
+}
+
+.about__page .about__me p{
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+    width: 60vw;
+}
