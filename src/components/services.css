@@ -5,8 +5,8 @@
     width: 100vw;
     background: rgba(231, 227, 227, 0.959);
     z-index: -1;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
+    /* margin-bottom: 60px; */
+    padding-bottom: 60px;
 }
 .services__page h1{
     font-size: 36px;
@@ -16,6 +16,7 @@
 }
 .services__page > p{
     font-size: 20px;
+    margin-bottom: 60px;
 }
 .services__flex{
     display: flex;
@@ -26,9 +27,9 @@
 .services__flex .media{
     position: relative;
     background: #fff;
-    margin: 6px 20px;
+    margin: 15px 20px;
     width: 350px;
-    height: 250px;
+    height: 300px;
     /* box-shadow: 2px 2px 1px #000; */
 }
 .services__flex .media .media__img{
