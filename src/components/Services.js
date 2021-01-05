@@ -15,7 +15,7 @@ function Services() {
                 </div>
                 <div className="media">
                     <Icon name="paint brush" className="media__img"/>
-                    <h2>Ui and Ux Design</h2>
+                    <h2>Ui/Ux Design</h2>
                     <p>The wireframes and the high fidelity version of the client product would be constructed in compliance with the customer's specifications.</p>
                 </div>
                 <div className="media">
