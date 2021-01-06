@@ -8,6 +8,9 @@
 #eslintcache
 .eslintcache
 
+#log
+*.log 
+
 # testing
 /coverage
 
