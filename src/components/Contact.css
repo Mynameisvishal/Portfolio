@@ -1,0 +1,136 @@
+.contact__page{
+    text-align: center;
+    width: 100vw;
+    padding-bottom: 30px;
+}
+
+.contact__page h1{
+    padding-top: 30px;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.contact__flex{
+    display: flex;
+    margin: 30px 8vw;
+    justify-content: space-between;
+
+}
+
+.contact__flex .contact__info{
+    display: flex;
+    width: 20vw;
+    justify-content: space-between;
+    flex-direction: column;
+    background: rgb(228, 224, 224);
+}
+
+.contact__flex .contact__info .contact__icon{
+    margin-top: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.contact__flex .contact__info .contact__icon::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: -10px;
+    left: -10px;
+    background: rgba(255, 255, 255, 0.534);
+    z-index: 1;
+}
+
+.contact__flex .contact__info h3{
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.contact__flex .contact__info p{
+    font-size: 16px;
+    padding: 2px 4px;
+    margin-bottom: 3px;
+}
+
+.contact__flex .contact__message{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 60vw;
+    text-align: left;
+}
+
+.contact__flex .contact__message .flex{
+    display: flex;
+}
+
+.contact__flex .contact__message .flex .flex{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 10px;
+
+}
+
+.contact__flex .contact__message .flex .flex input{
+    height: 25px;
+}
+
+.contact__flex .contact__message .flex{
+    margin-bottom: 20px;
+}
+
+.contact__flex .contact__message label{
+    font-weight: 600;
+}
+
+input[type=email]{
+    height: 25px;
+    margin-bottom: 20px;
+}
+
+textarea{
+    resize: none;
+    width: 90%;
+}
+
+.contact__flex .contact__message p{
+    font-size: 12px;
+}
+
+.contact__flex .contact__message .error{
+    display: none;
+}
+
+.contact__flex .contact__message Button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+input:focus{
+    outline: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+
+@media (max-width: 1079px) {
+    .contact__flex .contact__info{
+        width: 30vw;
+    }
+    .contact__flex{
+        margin: 30px 4vw;
+    
+    }
+    textarea{
+        resize: none;
+        /* width: 40vw; */
+    }
+}

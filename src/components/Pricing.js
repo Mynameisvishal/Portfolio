@@ -6,7 +6,7 @@ function Pricing() {
     return (
         <div className="pricing__page">
             <h1>Pricing</h1>
-            <p>Price depending on the number of sites, response, email support, and hosting.</p>
+            <p>Price depending on the number of sites, Responsiveness, email support, and hosting.</p>
             <div className="pricing__flex">
                 <div className="media">
                     <div className="symbol">🚀</div>
