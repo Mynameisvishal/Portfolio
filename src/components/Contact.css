@@ -63,74 +63,88 @@
     text-align: left;
 }
 
-.contact__flex .contact__message .flex{
-    display: flex;
+.contact__textarea{
+    resize: none !important;
+    margin-bottom: 0 !important; 
+    padding-bottom: 0 !important;
 }
 
-.contact__flex .contact__message .flex .flex{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding-right: 10px;
-
+.contact__submit{
+    margin: 20px 0 !important;
 }
-
-.contact__flex .contact__message .flex .flex input{
-    height: 25px;
-}
-
-.contact__flex .contact__message .flex{
-    margin-bottom: 20px;
-}
-
-.contact__flex .contact__message label{
-    font-weight: 600;
-}
-
-input[type=email]{
-    height: 25px;
-    margin-bottom: 20px;
-}
-
-textarea{
-    resize: none;
-    width: 90%;
-}
-
-.contact__flex .contact__message p{
-    font-size: 12px;
-}
-
-.contact__flex .contact__message .error{
-    display: none;
-}
-
-.contact__flex .contact__message Button{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-
-input:focus{
-    outline: none;
-}
-
-textarea:focus{
-    outline: none;
-}
-
 
 @media (max-width: 1079px) {
     .contact__flex .contact__info{
-        width: 30vw;
+        width: 25vw;
     }
+    .contact__flex .contact__message{
+        width: 50vw;
+    }
+}
+@media (max-width: 979px) {
     .contact__flex{
-        margin: 30px 4vw;
+        margin: 30px 3vw;
     
     }
-    textarea{
-        resize: none;
-        /* width: 40vw; */
+    .contact__flex .contact__info{
+        width: 30vw;
+    }
+    .contact__flex .contact__message{
+        width: 50vw;
+    }
+}
+@media (max-width: 779px) {
+    .contact__flex{
+        margin: 30px 2vw;
+    
+    }
+    .contact__flex .contact__info{
+        width: 40vw;
+    }
+    .contact__flex .contact__message{
+        width: 50vw;
+    }
+    .contact__flex .contact__info h3{
+        font-size: 17px;
+    }
+    
+    .contact__flex .contact__info p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 579px) {
+    .contact__flex{
+        margin: 30px 3vw;
+    }
+    .contact__flex .contact__info{
+        width: 40vw;
+    }
+    .contact__flex .contact__message{
+        width: 50vw;
+    }
+    .contact__flex .contact__info h3{
+        font-size: 17px;
+    }
+    
+    .contact__flex .contact__info p{
+        font-size: 12px;
+    }
+}
+@media (max-width: 459px) {
+    .contact__flex{
+        margin: 30px 3vw;
+    }
+    .contact__flex .contact__info{
+        width: 40vw;
+    }
+    .contact__flex .contact__message{
+        width: 50vw;
+    }
+    .contact__flex .contact__info h3{
+        font-size: 16px;
+    }
+    
+    .contact__flex .contact__info p{
+        font-size: 10px;
     }
 }

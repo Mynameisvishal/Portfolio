@@ -1,8 +1,19 @@
-import React from 'react';
-import {Icon,Button} from 'semantic-ui-react';
+import React,{useState} from 'react';
+import {Icon,Button,Form} from 'semantic-ui-react';
 import './Contact.css';
 
 function Contact() {
+    const[firstName,setFirstName] = useState('');
+    const[fName,setFName] = useState(false);
+    const[lastName,setLastName] = useState('');
+    const[lName,setLName] = useState(false);
+    const[email,setEmail] = useState('');
+    const[mail,setMail] = useState(false);
+    const[message,setMessage] = useState('');
+    const[msg,setMsg] = useState(false);
+    const[count,setCount] = useState(0);
+    const[error,setError] = useState('');
+
     return (
         <div className="contact__page">
             <h1>Contact Me</h1>
@@ -26,23 +37,17 @@ function Contact() {
                     </div>
                 </div>
                 <div className="contact__message">
-                    <div className="flex">
-                        <div className="flex">
-                            <label for="first-name">First Name</label>
-                            <input type="text" id="first-name" />
-                        </div>
-                        <div className="flex">
-                            <label for="last-name">Last Name</label>
-                            <input type="text" id="last-name" />
-                        </div>
-                    </div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" />
-                    <label for="message">Message</label>
-                    <textarea id="message" cols="" rows=""></textarea>
-                    <p> * max message size 255 characters</p>
-                    <textarea className='error' name="error" cols="30" rows="1"></textarea>
-                    <Button color="blue">send message</Button>
+                    <Form>
+                        <Form.Group widths='equal'>
+                            <Form.Input fluid label='First name' placeholder='First name' />
+                            <Form.Input fluid label='Last name' placeholder='Last name' />
+                        </Form.Group>
+                        <Form.Input type="email" label="Email" placeholder="Enter a vaild Email" fluid/>
+                        <Form.TextArea onKeyUp={(e)=>setCount(e.target.value.length)} label='Message'className="contact__textarea" placeholder='Your Message...' />
+                        <span>max character 255- {count}</span>
+                        {/* <Form.Checkbox label='I agree to the Terms and Conditions' /> */}
+                        <Form.Button className="contact__submit">Submit</Form.Button>
+                    </Form>
                 </div>
             </div>
         </div>
