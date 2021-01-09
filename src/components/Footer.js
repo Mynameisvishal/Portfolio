@@ -23,7 +23,9 @@ function Footer() {
                     <Icon name='instagram' className="ico--" size="huge" />
                 </span>
             </div> 
+            <div className="footer-copyrights">
             copyrights ©2021
+            </div>
         </div>
     )
 }
