@@ -46,7 +46,7 @@ function Contact() {
                         <Form.TextArea onKeyUp={(e)=>setCount(e.target.value.length)} label='Message'className="contact__textarea" placeholder='Your Message...' />
                         <span>max character 255- {count}</span>
                         {/* <Form.Checkbox label='I agree to the Terms and Conditions' /> */}
-                        <Form.Button className="contact__submit">Submit</Form.Button>
+                        <Form.Button color="green" className="contact__submit">Submit</Form.Button>
                     </Form>
                 </div>
             </div>
