@@ -169,6 +169,7 @@
     }
 }
 @media (max-width: 409px) {
+    
     .footer__page .footer__socialMedia .contact__sm{
         margin: 20px 10px;
         width: 30px ;
