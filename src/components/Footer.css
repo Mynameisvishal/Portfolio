@@ -21,7 +21,7 @@
     color: black;
     transform: perspective(1000px) rotate(-30deg) skew(25deg);
     transition: .5s;
-    box-shadow: -20px 20px 15px rgba(248, 245, 245, 0.56);
+    box-shadow: -20px 20px 15px rgba(248, 245, 245, 0.26);
 }
 .footer__page .footer__socialMedia .contact__sm:before{
     content: "";
@@ -56,72 +56,72 @@
 
 .footer__page .footer__socialMedia span .ico--{
     font-size: 40px;
-    color: #262626;
+    color: white;
     line-height: 60px;
     transition: .5s;
 }
 
-.footer__socialMedia span:hover .ico--{
+.footer__socialMedia span .ico--{
     color: white;
 }
 
-.footer__socialMedia span:nth-child(1):hover 
-{
-    background-color: #3b5998;
+.footer__socialMedia .contact__sm:nth-child(1) 
+{   
+    background: #3b5998;
 }
-.footer__page .footer__socialMedia span:nth-child(1):hover::before
+.footer__page .footer__socialMedia span:nth-child(1)::before
 {
     background-color: #20467d;
 }
-.footer__page .footer__socialMedia span:nth-child(1):hover::after
+.footer__page .footer__socialMedia span:nth-child(1)::after
 {
     background-color:#2e576b;
 }
-.footer__socialMedia span:nth-child(2):hover 
+.footer__socialMedia .contact__sm:nth-child(2) 
 {
     background-color: #1da1f2;
 }
-.footer__page .footer__socialMedia span:nth-child(2):hover::before
+.footer__page .footer__socialMedia span:nth-child(2)::before
 {
     background-color:#1b78b1;
 }
-.footer__page .footer__socialMedia span:nth-child(2):hover::after
+.footer__page .footer__socialMedia span:nth-child(2)::after
 {
     background-color: #2e86bd;
 }
-.footer__socialMedia span:nth-child(3):hover 
+.footer__socialMedia .contact__sm:nth-child(3) 
 {
     background-color:  #007bb5;
 }
-.footer__page .footer__socialMedia span:nth-child(3):hover::before
+.footer__page .footer__socialMedia span:nth-child(3)::before
 {
     background-color: #2c599a;
 }
-.footer__page .footer__socialMedia span:nth-child(3):hover::after
+.footer__page .footer__socialMedia span:nth-child(3)::after
 {
     background-color: #2e86bd;
 }
-.footer__socialMedia span:nth-child(4):hover 
+.footer__socialMedia .contact__sm:nth-child(4) 
 {
     background-color: #4078c0;
 }
-.footer__page .footer__socialMedia span:nth-child(4):hover::before
+.footer__page .footer__socialMedia span:nth-child(4)::before
 {
     background-color:#4078ca;
 }
-.footer__page .footer__socialMedia span:nth-child(4):hover::after
+.footer__page .footer__socialMedia span:nth-child(4)::after
 {
     background-color: #4078cd;
 }
-.footer__socialMedia span:nth-child(5):hover 
+.footer__socialMedia .contact__sm:nth-child(5) 
 {
     background-color:#4d72bf;
 }
-.footer__page .footer__socialMedia span:nth-child(5):hover::before
+.footer__page .footer__socialMedia span:nth-child(5)::before
 {
     background-color: #882874;
 }
-.footer__page .footer__socialMedia span:nth-child(5):hover::after
+.footer__page .footer__socialMedia span:nth-child(5)::after
 {
     background-color:#853b76;
 }

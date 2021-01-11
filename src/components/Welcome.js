@@ -5,7 +5,7 @@ import {Button} from 'semantic-ui-react';
 
 function Welcome() {
     return (
-        <div className="welcome__page">
+        <div className="welcome__page" id="welcome">
             <div className="welcome__info">
                 <h2>HELLO👋, I'M</h2>
                 <h1>VISHAL PRAKASH</h1>

@@ -4,7 +4,7 @@ import {Icon} from 'semantic-ui-react';
 
 function Services() {
     return (
-        <div className="services__page">
+        <div className="services__page" id="services">
             <h1>My services</h1>
             <p>Based on the time flow, features, and responsiveness, the cost will be determined.</p>
             <div className="services__flex">

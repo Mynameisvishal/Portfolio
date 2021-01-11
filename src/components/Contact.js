@@ -15,7 +15,7 @@ function Contact() {
     const[error,setError] = useState('');
 
     return (
-        <div className="contact__page">
+        <div className="contact__page" id="contact">
             <h1>Contact Me</h1>
             <p>You can contact me by mail, by phone, at my place, or by leaving your valuable comment.</p>
             <div className="contact__flex">

@@ -5,7 +5,7 @@ import Vishal from "../images/vishal.jpg";
 
 function About() {
     return (
-        <div className="about__page">
+        <div className="about__page" id="about">
             <div className="about__pic">
                 <img src={Vishal} alt="Vishal P"/>
             </div>

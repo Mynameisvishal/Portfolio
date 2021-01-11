@@ -7,7 +7,7 @@ import VioChats from '../images/VioChats.png';
 
 function Work() {
     return (
-        <div className="work__page">
+        <div className="work__page" id="work">
             <h1>My Projects</h1>
             <div className="work__flex">
                 <div className="media">
