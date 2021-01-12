@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './Header.css';
 import vishal from '../images/square.jpg';
+import logo from "../images/logo.png";
 
 function Header({activePage}) {
 
@@ -10,6 +11,7 @@ function Header({activePage}) {
         <React.Fragment>
             <div className="header__nav">
                 <div className="header__brandname">
+                    {/* <img src={logo} alt="" width="25px" height="25px"/> */}
                     VISHAL
                 </div>
                 <div className="header__menu">
@@ -19,9 +21,15 @@ function Header({activePage}) {
                     <button onClick={()=>{   document.getElementById('about').scrollIntoView({behavior:'smooth',block:"center"});  }}
                         className={`${activePage==="about" && "active"}`}
                     >About</button>
-                    <button onClick={()=>{   document.getElementById('services').scrollIntoView({behavior:'smooth',block:"center"});  }}>Service</button>
-                    <button onClick={()=>{   document.getElementById('work').scrollIntoView({behavior:'smooth',block:"center"});  }}>Works</button>
-                    <button onClick={()=>{   document.getElementById('contact').scrollIntoView({behavior:'smooth',block:"start"});  }}>Contact</button>
+                    <button onClick={()=>{   document.getElementById('services').scrollIntoView({behavior:'smooth',block:"center"});  }}
+                         className={`${activePage==="services" && "active"}`}
+                    >Service</button>
+                    <button onClick={()=>{   document.getElementById('work').scrollIntoView({behavior:'smooth',block:"center"});  }}
+                         className={`${activePage==="work" && "active"}`}
+                    >Works</button>
+                    <button onClick={()=>{   document.getElementById('contact').scrollIntoView({behavior:'smooth',block:"start"});  }}
+                         className={`${activePage==="contact" && "active"}`}
+                    >Contact</button>
                 </div>
                 <div onClick={()=>setClick(!click)} className={`header__sidemenu ${click && "show"}`}>
                     <div className="header__line"></div>

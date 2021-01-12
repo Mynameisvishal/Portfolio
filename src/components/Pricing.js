@@ -4,7 +4,7 @@ import {Icon, Button } from 'semantic-ui-react';
 
 function Pricing() {
     return (
-        <div className="pricing__page">
+        <div className="pricing__page" id="pricing">
             <h1>Pricing</h1>
             <p>Price depending on the number of sites, Responsiveness, email support, and hosting.</p>
             <div className="pricing__flex">

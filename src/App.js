@@ -11,35 +11,41 @@ import {useState,useEffect} from "react";
 
 function App() {
   const [activePage,setActivePage] = useState('');
+  const [click, setClick] = useState(false);
+
 
   window.addEventListener('scroll',()=>{
     const scrolled = window.scrollY;
-    const welcome = document.getElementById('welcome').offsetTop;
-    const about = document.getElementById('about').offsetTop;
-    const services = document.getElementById('services').offsetTop;
-    const work = document.getElementById('work').offsetTop;
-    const contact = document.getElementById('contact').offsetTop;
-    console.log(about);
-    if(scrolled >= welcome){
+    const welcome = document.getElementById('welcome').offsetHeight;
+    const about = document.getElementById('about').offsetHeight;
+    const services = document.getElementById('services').offsetHeight;
+    const work = document.getElementById('work').offsetHeight;
+    const pricing = document.getElementById('pricing').offsetHeight;
+    const contact = document.getElementById('contact').offsetHeight;
+    const two = welcome + about;
+    const three = two +services;
+    const four = three + work + pricing;
+    const five = four + contact;
+    if(scrolled <= welcome){
       setActivePage('welcome');
-    }else if(scrolled >= about){
-      setActivePage('about')
+    }else if(scrolled <= two){
+      setActivePage('about');
     }
-    else if(scrolled >= services){
-      setActivePage('services')
+    else if(scrolled <= three){
+      setActivePage('services');
     }
-    else if(scrolled >= work){
-      setActivePage('work')
+    else if(scrolled <= four){
+      setActivePage('work');
 
     }
-    else if(scrolled >= contact){
-      setActivePage('contact')
+    else if(scrolled <= five){
+      setActivePage('contact');
     }else{
-      console.log('end of the page');
     }
 
   });
 
+  window.removeEventListener('scroll',()=>{});
 
   // useEffect(() => {
    
@@ -52,7 +58,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header activePage={activePage}/>
+      <Header activePage={activePage} click={click} setClick={setClick}/>
       <Welcome />
       <About />
       <Services />
