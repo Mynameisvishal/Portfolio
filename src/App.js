@@ -7,16 +7,22 @@ import Pricing from './components/Pricing';
 import Services from './components/Services';
 import Welcome from './components/Welcome';
 import Work from './components/Work';
+import Aos from 'aos';
 import {useState,useEffect} from "react";
 
 function App() {
-  const [activePage,setActivePage] = useState('');
+  const [activePage,setActivePage] = useState('welcome');
   const [click, setClick] = useState(false);
 
+  useEffect(()=>{
+    Aos.init({
+      duration:1300
+    })
+  },[])
 
   window.addEventListener('scroll',()=>{
     const scrolled = window.scrollY;
-    const welcome = document.getElementById('welcome').offsetHeight;
+    const welcome = document.getElementById('welcome').offsetHeight -20;
     const about = document.getElementById('about').offsetHeight;
     const services = document.getElementById('services').offsetHeight;
     const work = document.getElementById('work').offsetHeight;
@@ -26,6 +32,7 @@ function App() {
     const three = two +services;
     const four = three + work + pricing;
     const five = four + contact;
+    Aos.refresh();
     if(scrolled <= welcome){
       setActivePage('welcome');
     }else if(scrolled <= two){

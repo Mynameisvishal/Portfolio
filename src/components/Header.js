@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './Header.css';
 import vishal from '../images/square.jpg';
+import {HashLink as Link} from "react-router-hash-link";
 import logo from "../images/logo.png";
 
 function Header({activePage}) {
@@ -15,13 +16,13 @@ function Header({activePage}) {
                     VISHAL
                 </div>
                 <div className="header__menu">
-                    <button onClick={()=>{   document.getElementById('welcome').scrollIntoView({behavior:'smooth',block:"center"});  }}
+                    <button onClick={()=>  document.getElementById('welcome').scrollIntoView({ behavior: 'smooth' })}
                         className={`${activePage==="welcome" && "active"}`}
                     >Home</button>
-                    <button onClick={()=>{   document.getElementById('about').scrollIntoView({behavior:'smooth',block:"center"});  }}
+                    <button onClick={()=>{   document.getElementById('about').scrollIntoView({ behavior:'smooth',block:"center"});  }}
                         className={`${activePage==="about" && "active"}`}
                     >About</button>
-                    <button onClick={()=>{   document.getElementById('services').scrollIntoView({behavior:'smooth',block:"center"});  }}
+                    <button onClick={()=>{   document.getElementById('services').scrollIntoView({ behavior:'smooth',block:"center"});  }}
                          className={`${activePage==="services" && "active"}`}
                     >Service</button>
                     <button onClick={()=>{   document.getElementById('work').scrollIntoView({behavior:'smooth',block:"center"});  }}
