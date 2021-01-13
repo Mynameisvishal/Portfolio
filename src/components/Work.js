@@ -10,7 +10,7 @@ function Work() {
         <div className="work__page" id="work">
             <h1>My Projects</h1>
             <div className="work__flex">
-                <div className="media">
+                <div data-aos="zoom-in" className="media">
                     <h2>VioChats</h2>
                     <img src={VioChats} alt="VioChats"/>
                     <Button color="green">
@@ -18,7 +18,7 @@ function Work() {
                         View Project
                         </Button>
                 </div>
-                <div className="media">
+                <div data-aos="zoom-in" className="media">
                     <h2>Covid19</h2>
                     <img src={Covid19} alt="Covid19"/>
                     <Button color="green">
@@ -26,7 +26,7 @@ function Work() {
                         View Project
                         </Button>
                 </div>
-                <div className="media">
+                <div data-aos="zoom-in" className="media">
                     <h2>MovieBuzz</h2>
                     <img src={MovieBuzz} alt="MovieBuzz"/>
                     <Button color="green">

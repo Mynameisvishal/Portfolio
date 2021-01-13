@@ -59,9 +59,7 @@
     
 }
 @media (max-width: 1079px) {
-    .welcome__page .welcome__avatar{
-        display: none;
-    }
+    
     .welcome__page .welcome__info{
         align-items: center;
         margin: 50px auto;
@@ -71,6 +69,9 @@
 @media (max-width: 679px) {
     .welcome__page .welcome__info{
         margin-top: 25vh;
+    }
+    .welcome__page .welcome__avatar{
+        display: none;
     }
 
     .welcome__page .welcome__info h2{

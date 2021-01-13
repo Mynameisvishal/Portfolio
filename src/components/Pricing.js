@@ -8,14 +8,14 @@ function Pricing() {
             <h1>Pricing</h1>
             <p>Price depending on the number of sites, Responsiveness, email support, and hosting.</p>
             <div className="pricing__flex">
-                <div className="media">
+                <div data-aos="flip-left" className="media">
                     <div className="symbol">🚀</div>
                     <h2>Minimum</h2>
                     <span>₹2000</span>
                     <p>5 Pages</p>
                     <Button color="blue">Buy Now</Button>
                 </div>
-                <div className="media">
+                <div data-aos="flip-left" className="media">
                     <Icon color="red" size="huge" name="shield" />
                     <h2>Standard</h2>
                     <span>₹5000</span>
@@ -23,7 +23,7 @@ function Pricing() {
                     <p>Responsiveness</p>
                     <Button color="blue">Buy Now</Button>
                 </div>
-                <div className="media">
+                <div data-aos="flip-left" className="media">
                     <Icon color="yellow" size="huge" name="handshake" />
                     <h2>Premium</h2>
                     <span>₹9000</span>

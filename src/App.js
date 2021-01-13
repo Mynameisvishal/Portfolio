@@ -16,7 +16,8 @@ function App() {
 
   useEffect(()=>{
     Aos.init({
-      duration:1300
+      duration:1700,
+      offset: 0,
     })
   },[])
 
@@ -32,7 +33,7 @@ function App() {
     const three = two +services;
     const four = three + work + pricing;
     const five = four + contact;
-    Aos.refresh();
+    // Aos.refresh();
     if(scrolled <= welcome){
       setActivePage('welcome');
     }else if(scrolled <= two){
