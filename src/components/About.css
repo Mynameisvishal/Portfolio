@@ -19,8 +19,8 @@
 }
 
 .about__page .about__me h1{
-    font-size: 3rem;
-    font-family: 'Skranji',sans-serif;
+    font-size: 2.5rem;
+    /* font-family: 'Skranji',sans-serif; */
 }
 
 .about__page .about__me p{
