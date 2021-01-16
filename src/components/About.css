@@ -1,0 +1,138 @@
+.about__page{
+    display: flex;
+    /* width: 100vw; */
+}
+.about__page .about__pic{
+    width: 40vw;
+    height: 80vh;
+}
+
+.about__page .about__pic img{
+    width: 300px;
+    height: 430px;
+}
+
+.about__page .about__me{
+    margin: auto auto;
+    width: 60vw;
+    /* height: 100vh; */
+}
+
+.about__page .about__me h1{
+    font-size: 3vw;
+    font-family: 'Skranji',sans-serif;
+}
+
+.about__page .about__me p{
+    font-size: 1.5vw;
+    font-family: 'Poppins',sans-serif;
+    /* width: 90%; */
+}
+
+@media (max-width: 1279px) {
+  
+}
+@media (max-width: 1179px) {
+ 
+}
+@media (max-width: 1079px) {
+    .about__page .about__pic img{
+        width: 300px;
+        height: 400px;
+    }
+}
+@media (max-width: 979px) {
+    .about__page .about__pic img{
+        width: 280px;
+        height: 410px;
+    }
+}
+@media (max-width: 879px) {
+    .about__page .about__pic img{
+        width: 250px;
+        height: 380px;
+    }
+    .about__page .about__me{
+        align-items: center;
+    }
+}
+@media (max-width: 779px) {
+    .about__page .about__pic img{
+        width: 250px;
+        height: 380px;
+    }
+    .about__page .about__me{
+        align-items: center;
+    }
+    .about__page {
+        height: 70vh;
+    }
+}
+@media (max-width: 679px) {
+    .about__page .about__pic img{
+        display: none;
+    }
+    .about__page .about__me{
+        position: relative;
+        z-index: -1;
+        float: left;
+        width: 80vw;
+        height: 300px;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right:20vw ;
+        text-align: left;
+    }
+    .about__page .about__me h1{
+        font-size: 28px;
+        font-family: 'Skranji',sans-serif;
+        text-align: left;
+
+    }
+    
+    .about__page .about__me p{
+        font-size: 17px;
+        font-family: 'Poppins',sans-serif;
+        /* width: 90%; */
+    }
+}
+@media (max-width: 579px) {
+    .about__page .about__me{
+        height: 400px;
+    }
+    .about__page .about__me h1{
+        font-size: 26px;
+        font-family: 'Skranji',sans-serif;
+        text-align: left;
+
+    }
+    
+    .about__page .about__me p{
+        font-size: 15px;
+        font-family: 'Poppins',sans-serif;
+        /* width: 90%; */
+    }
+    
+}
+/* @media (max-width: 479px) {
+    .about__page .about__me{
+        height: 60vh;
+    }
+    .about__page .about__me h1{
+        font-size: 24px;
+        font-family: 'Skranji',sans-serif;
+        text-align: left;
+
+    }
+    
+    .about__page .about__me p{
+        font-size: 13px;
+        font-family: 'Poppins',sans-serif;
+        
+    }
+    
+} */
+@media (max-width: 379px) {
+    
+}
