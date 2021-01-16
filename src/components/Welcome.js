@@ -5,7 +5,7 @@ import {Button} from 'semantic-ui-react';
 
 function Welcome() {
     const downloadFile = ()=>{
-        const win = window.open("https://firebasestorage.googleapis.com/v0/b/vishalportfolio98.appspot.com/o/vishal-resume.pdf?alt=media&token=f0b5fe5b-d024-4aae-b02a-e42e840b5d89", "_blank");
+        const win = window.open("https://firebasestorage.googleapis.com/v0/b/vishalportfolio98.appspot.com/o/resume%2FVishal%20resume-16_01_2021.pdf?alt=media&token=2cb4d1fb-7ea5-4c1c-a868-c8db96a4bc22", "_blank");
         win.focus();       
     }
 
