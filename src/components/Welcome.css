@@ -1,28 +1,46 @@
 .welcome__page{
     margin-top: 60px;
+    position: relative;
     display: flex;
+    width: 100vw;
     height: 100vh;
     justify-content: space-around;
     background: rgba(214, 210, 210, 0.986);
 }
 
 .welcome__page .welcome__info{
-    margin: auto auto;
+    width: 700px;
+    margin: auto 30px;
     /* align-items: center; */
 }
 
 .welcome__page .welcome__info h2{
     font-size: 30px;
+    /* animation: animateLeft ease-in 2s; */
 }
+
+/* @keyframes animateLeft {
+    0% {margin-left: -600px;}
+    40% {margin-left: -600px;}
+    100% {margin-left: 20;}
+  }  */
+@keyframes animateRight {
+    0% {opacity: 0;}
+    40% {opacity: 0.1;}
+    50% {opacity: 0.3;}
+    100% {opacity: 1;}
+  } 
 
 .welcome__page .welcome__info h1{
     font-size: 46px;
     font-family: 'Shojumaru',sans-serif;
+    /* animation: animateLeft ease-in-out 3.5s; */
 }
 
 .welcome__page .welcome__info p{
     font-size: 24px;
     width: 600px;
+    /* animation: animateLeft ease 5s; */
 }
 
 .welcome__page .welcome__avatar{
@@ -30,6 +48,7 @@
     height: 50vh;
     align-items: center;
     margin: auto 4px;
+    animation: animateRight ease 1s;
 }
 
 .welcome__page .welcome__avatar img{
@@ -62,13 +81,14 @@
     
     .welcome__page .welcome__info{
         align-items: center;
-        margin: 50px auto;
+        margin: auto 30px;
     }
     
 }
 @media (max-width: 679px) {
     .welcome__page .welcome__info{
         margin-top: 25vh;
+        margin-left: 30px;
     }
     .welcome__page .welcome__avatar{
         display: none;

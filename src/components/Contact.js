@@ -1,18 +1,18 @@
 import React,{useState} from 'react';
-import {Icon,Button,Form} from 'semantic-ui-react';
+import {Icon,Form} from 'semantic-ui-react';
 import './Contact.css';
 
 function Contact() {
-    const[firstName,setFirstName] = useState('');
-    const[fName,setFName] = useState(false);
-    const[lastName,setLastName] = useState('');
-    const[lName,setLName] = useState(false);
-    const[email,setEmail] = useState('');
-    const[mail,setMail] = useState(false);
-    const[message,setMessage] = useState('');
-    const[msg,setMsg] = useState(false);
+    // const[firstName,setFirstName] = useState('');
+    // const[fName,setFName] = useState(false);
+    // const[lastName,setLastName] = useState('');
+    // const[lName,setLName] = useState(false);
+    // const[email,setEmail] = useState('');
+    // const[mail,setMail] = useState(false);
+    // const[message,setMessage] = useState('');
+    // const[msg,setMsg] = useState(false);
     const[count,setCount] = useState(0);
-    const[error,setError] = useState('');
+    // const[error,setError] = useState('');
 
     return (
         <div className="contact__page" id="contact">

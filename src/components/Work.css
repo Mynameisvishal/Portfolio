@@ -4,7 +4,8 @@
 }
 
 .work__page h1{
-    font-size: 36px;
+    font-size: 3vw;
+    font-family: 'Skranji',sans-serif;
     font-weight: 700;
     margin-bottom: 50px;
 }

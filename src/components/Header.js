@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
 import './Header.css';
 import vishal from '../images/square.jpg';
-import {HashLink as Link} from "react-router-hash-link";
-import logo from "../images/logo.png";
 
 function Header({activePage}) {
 
