@@ -18,6 +18,10 @@ function App() {
     Aos.init({
       duration:1700,
       offset: 0,
+      disable: function() {
+        var maxWidth = 900;
+        return window.innerWidth < maxWidth;
+      }
     })
   },[])
 

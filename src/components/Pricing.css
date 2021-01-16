@@ -8,7 +8,7 @@
 
 .pricing__page h1{
     padding-top: 30px;
-    font-size: 3vw;
+    font-size: 3rem;
     font-family: 'Skranji',sans-serif;
     font-weight: 700;
     margin: 0;
@@ -57,3 +57,9 @@
     margin-bottom: 20px;
 }
 
+@media (max-width: 779px) {
+    .pricing__page h1{
+        font-size: 2rem;
+    }
+    
+}

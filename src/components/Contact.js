@@ -2,11 +2,23 @@ import React,{useState} from 'react';
 import {Icon,Form,Message} from 'semantic-ui-react';
 import './Contact.css';
 import firebase from '../firebase';
-import e from 'cors';
+// import emailjs from 'emailjs-com';
+// import e from 'cors';
 
 function Contact() {
     const comments = firebase.database().ref('comments');
     // ${uuidv4()}
+    // const sendEmail=(e)=> {
+    //     e.preventDefault();
+    
+    //     emailjs.sendForm('gmail', 'template_s4ri7b6', e.target, 'user_XYlXYB8TqlfFhZE1HiPEz')
+    //       .then((result) => {
+    //           console.log(result.text);
+    //       }, (error) => {
+    //           console.log(error.text);
+    //       });
+    //       e.target.reset();
+    //   }
 
     const[firstName,setFirstName] = useState('');
     // const[fName,setFName] = useState(false);
@@ -35,8 +47,8 @@ function Contact() {
        }
     }
 
-    const sendMessage = (event)=>{
-        event.preventDefault();
+    const sendMessage = (e)=>{
+        e.preventDefault();
         console.log('inside send message');
         if(validate() ){
             const msg = {

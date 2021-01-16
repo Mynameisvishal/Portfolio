@@ -6,6 +6,11 @@ function Header({activePage}) {
 
     const [click, setClick] = useState(false);
 
+    const selectMenu = (id)=>{
+        document.getElementById(id).scrollIntoView({behavior:'smooth',block:"center"});
+        setClick(false);
+    }
+
     return (
         <React.Fragment>
             <div className="header__nav">
@@ -41,15 +46,25 @@ function Header({activePage}) {
                     <img src={vishal} alt="Vishal"/>
                 </div>
                 <div className={`menu ${click && 'show'}`}>
-                    <button onClick={()=>{   document.getElementById('welcome').scrollIntoView({behavior:'smooth',block:"center"});  }}
+                    <button onClick={()=>{   document.getElementById('welcome').scrollIntoView({behavior:'smooth',block:"center"});
+                        setClick(false);
+                    }}
                         className={`${activePage==="welcome" && "active"}`}
                     >Home</button>
-                    <button onClick={()=>{   document.getElementById('about').scrollIntoView({behavior:'smooth',block:"center"});  }}
+                    <button onClick={()=>{   document.getElementById('about').scrollIntoView({behavior:'smooth',block:"start"});
+                        setClick(false);
+                    }}
                         className={`${activePage==="about" && "active"}`}
                     >About</button>
-                    <button onClick={()=>{   document.getElementById('services').scrollIntoView({behavior:'smooth',block:"center"});  }}>Service</button>
-                    <button onClick={()=>{   document.getElementById('work').scrollIntoView({behavior:'smooth',block:"center"});  }}>Works</button>
-                    <button onClick={()=>{   document.getElementById('contact').scrollIntoView({behavior:'smooth',block:"start"});  }}>Contact</button>
+                    <button onClick={()=>{   document.getElementById('services').scrollIntoView({behavior:'smooth',block:"start"});
+                        setClick(false);
+                    }}>Service</button>
+                    <button onClick={()=>{   document.getElementById('work').scrollIntoView({behavior:'smooth',block:"start"});
+                        setClick(false);
+                    }}>Works</button>
+                    <button onClick={()=>{   document.getElementById('contact').scrollIntoView({behavior:'smooth',block:"start"});
+                        setClick(false);
+                    }}>Contact</button>
                 </div>
 
             </div> :"" }

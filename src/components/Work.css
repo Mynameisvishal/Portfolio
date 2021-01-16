@@ -4,7 +4,7 @@
 }
 
 .work__page h1{
-    font-size: 3vw;
+    font-size: 3rem;
     font-family: 'Skranji',sans-serif;
     font-weight: 700;
     margin-bottom: 50px;
@@ -57,10 +57,9 @@
     }
     
 }
-@media (max-width: 927px) {
-    .work__flex .media{
-        width: 90vw;
-        height: 78vh;
+@media (max-width: 779px) {
+    .work__page h1{
+        font-size: 2rem;
     }
     
 }
