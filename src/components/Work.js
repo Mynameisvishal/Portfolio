@@ -13,7 +13,8 @@ function Work() {
                 <div data-aos="zoom-in" className="media">
                     <h2>VioChats</h2>
                     <img src={VioChats} alt="VioChats"/>
-                    <Button color="green">
+                    <Button onClick={()=> window.open("https://chat-app-u.web.app/", "_blank").focus()} 
+                        color="green">
                         <Icon name="eye" />
                         View Project
                         </Button>
@@ -21,7 +22,8 @@ function Work() {
                 <div data-aos="zoom-in" className="media">
                     <h2>Covid19</h2>
                     <img src={Covid19} alt="Covid19"/>
-                    <Button color="green">
+                    <Button onClick={()=> window.open("https://covid19-tracker-tamil.web.app/", "_blank").focus()}
+                     color="green">
                         <Icon name="eye" />
                         View Project
                         </Button>
@@ -29,7 +31,7 @@ function Work() {
                 <div data-aos="zoom-in" className="media">
                     <h2>MovieBuzz</h2>
                     <img src={MovieBuzz} alt="MovieBuzz"/>
-                    <Button color="green">
+                    <Button onClick={()=> window.open("https://moviebuzz-c2232.web.app/", "_blank").focus()} color="green">
                         <Icon name="eye" />
                         View Project
                         </Button>

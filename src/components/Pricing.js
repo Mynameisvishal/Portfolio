@@ -13,7 +13,7 @@ function Pricing() {
                     <h2>Minimum</h2>
                     <span>₹2000</span>
                     <p>5 Pages</p>
-                    <Button color="blue">Buy Now</Button>
+                    <Button disabled color="blue">Buy Now</Button>
                 </div>
                 <div data-aos="flip-left" className="media">
                     <Icon color="red" size="huge" name="shield" />
@@ -21,7 +21,7 @@ function Pricing() {
                     <span>₹5000</span>
                     <p>20 Pages</p>
                     <p>Responsiveness</p>
-                    <Button color="blue">Buy Now</Button>
+                    <Button disabled color="blue">Buy Now</Button>
                 </div>
                 <div data-aos="flip-left" className="media">
                     <Icon color="yellow" size="huge" name="handshake" />
@@ -31,7 +31,7 @@ function Pricing() {
                     <p>Responsiveness</p>
                     <p>Dedicated Support</p>
                     <p>Hosting</p>
-                    <Button color="blue">Buy Now</Button>
+                    <Button disabled color="blue">Buy Now</Button>
                 </div>
             </div>
         </div>

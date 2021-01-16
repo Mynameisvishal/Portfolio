@@ -47,6 +47,7 @@
 .work__flex .media Button{
     margin-top: 10px;
     width: 100% !important;
+    margin-bottom: 0;
 }
 
 @media (max-width: 927px) {
