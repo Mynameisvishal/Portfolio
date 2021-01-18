@@ -88,6 +88,9 @@
     }
 } */
 @media (max-width: 779px) {
+    .about__page{
+        height: 80vh;
+    }
     .about__page .about__pic img{
         display: none;
     }
@@ -98,7 +101,7 @@
         width: 80vw;
         height: 300px;
         margin: 0;
-        margin-top: 30px;
+        margin-top: 0px;
         margin-bottom: 30px;
         margin-right:20vw ;
         text-align: left;
@@ -118,7 +121,7 @@
 }
 @media (max-width: 779px) {
     .about__page{
-        height: 50vh;
+        height: 80vh;
         display: block;
     }
     .about__page .about__pic{
@@ -126,7 +129,7 @@
     }
     .about__page .about__me{
         width: 90vw;
-        height: 400px;
+        height: 600px;
         display: flex;
         flex-direction: column;
         justify-content: baseline;
@@ -148,7 +151,7 @@
 }
 @media (max-width: 579px) {
     .about__page{
-        height: 50vh;
+        /* height: 50vh; */
         display: block;
     }
     .about__page .about__pic{

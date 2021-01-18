@@ -6,12 +6,12 @@ function Services() {
     return (
         <div className="services__page" id="services">
             <h1>My services</h1>
-            <p>Based on the time flow, features, and responsiveness, the cost will be determined.</p>
+            <p>The cost would be calculated on the basis of time flow, features and responsiveness.</p>
             <div className="services__flex">
                 <div data-aos="fade-up" data-aos-delay="300" className="media">
                     <Icon name="code" className="media__img"/>
                     <h2>Web Development</h2>
-                    <p>The website will be designed to satisfy the needs of customers. I ensure that the website is supplied with a decent design, gui and tidy code.</p>
+                    <p>The website will be designed to satisfy the needs of customers. I ensure that the website is supplied with a decent design, GUI and tidy code.</p>
                 </div>
                 <div data-aos="fade-up" data-aos-delay="300" className="media">
                     <Icon name="paint brush" className="media__img"/>

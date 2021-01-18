@@ -6,11 +6,6 @@ function Header({activePage}) {
 
     const [click, setClick] = useState(false);
 
-    const selectMenu = (id)=>{
-        document.getElementById(id).scrollIntoView({behavior:'smooth',block:"center"});
-        setClick(false);
-    }
-
     return (
         <React.Fragment>
             <div className="header__nav">
@@ -19,19 +14,20 @@ function Header({activePage}) {
                     VISHAL
                 </div>
                 <div className="header__menu">
-                    <button onClick={()=> document.getElementById('welcome').scrollIntoView({ behavior: "smooth" })}
+                    <button onClick={()=>{   document.getElementById('welcome').scrollIntoView({behavior:'smooth',block:"center"});
+                    }}
                         className={`${activePage==="welcome" && "active"}`}
                     >Home</button>
-                    <button onClick={()=> document.getElementById('about').scrollIntoView({ behavior:'smooth',block:"center"})}
+                    <button onClick={()=> {document.getElementById('about').scrollIntoView({ behavior:'smooth',block:"center"});}}
                         className={`${activePage==="about" && "active"}`}
                     >About</button>
-                    <button onClick={()=> document.getElementById('services').scrollIntoView({ behavior:'smooth',block:"center"})}
+                    <button onClick={()=> {document.getElementById('services').scrollIntoView({ behavior:'smooth',block:"center"});}}
                          className={`${activePage==="services" && "active"}`}
                     >Service</button>
-                    <button onClick={()=> document.getElementById('work').scrollIntoView({behavior:'smooth',block:"center"})}
+                    <button onClick={()=> {document.getElementById('work').scrollIntoView({behavior:'smooth',block:"center"});}}
                          className={`${activePage==="work" && "active"}`}
                     >Works</button>
-                    <button onClick={()=> document.getElementById('contact').scrollIntoView({behavior:'smooth',block:"start"})}
+                    <button onClick={()=> {document.getElementById('contact').scrollIntoView({behavior:'smooth',block:"start"});}}
                          className={`${activePage==="contact" && "active"}`}
                     >Contact</button>
                 </div>
