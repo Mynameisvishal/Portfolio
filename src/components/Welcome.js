@@ -15,7 +15,7 @@ function Welcome() {
                 <h2   
                     >HELLO👋, I'M</h2>
                 <h1>VISHAL PRAKASH</h1>
-                <p >UI/UX Designer and a Front-End Developer with the passion of creativity.</p>
+                <p >UI/UX Designer and a Front-End Developer with passion for creativity.</p>
 
                 <Button onClick={downloadFile} color="blue">Download CV</Button>
             </div>
