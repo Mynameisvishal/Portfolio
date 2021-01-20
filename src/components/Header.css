@@ -167,12 +167,10 @@
     .header__fixed .img{
         padding: 30vh 0;
         margin-left: 0;
-        animation: scrollleft ease-in-out 1.4s;
-        transition: all ease-in-out 2s;
-
+        animation: scrollleft ease-in-out 1.15s;
     }
     .header__fixed .menu{
-        animation: scrollright ease-in-out 1.4s;
+        animation: scrollright ease-in-out 1.15s;
         margin-left: 0;
         /* width: 50vw; */
 

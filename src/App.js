@@ -31,11 +31,11 @@ function App() {
     const about = document.getElementById('about').offsetHeight;
     const services = document.getElementById('services').offsetHeight;
     const work = document.getElementById('work').offsetHeight;
-    const pricing = document.getElementById('pricing').offsetHeight;
+    // const pricing = document.getElementById('pricing').offsetHeight;
     const contact = document.getElementById('contact').offsetHeight;
     const two = welcome + about;
     const three = two +services;
-    const four = three + work + pricing;
+    const four = three + work;
     const five = four + contact;
     // Aos.refresh();
     if(scrolled <= welcome){
@@ -75,7 +75,7 @@ function App() {
       <About />
       <Services />
       <Work />
-      <Pricing />
+      {/* <Pricing /> */}
       <Contact />
       <Footer />
     </div>
